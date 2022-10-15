@@ -25,8 +25,8 @@ public class EmailNotificationClient {
 		msg.setTo(emailNotification.getRecipientEmailId());
 		msg.setSubject(subjectSupport);
 		msg.setText("Dear User,\n\n" + "Your One Time Password (OTP) is " + emailNotification.getOtp()
-				+ "\n\nPlease use above password to confirm your ride with My Charter Cars"
-				+ "\n\n\nRegards,\nMy Charter Cars");
+				+ "\n\nPlease use above password to confirm your ride with My Charter Car"
+				+ "\n\n\nRegards,\nMy Charter Car");
 		javaMailSender.send(msg);
 	}
 	
@@ -35,7 +35,7 @@ public class EmailNotificationClient {
 		msg.setTo(emailNotification.getRecipientEmailId());
 		msg.setSubject(subjectGreenInit);
 		msg.setText("Dear User,\n\n" + "Thank you for enrolling to Green Initiative Program"
-				+ "\n\n\nRegards,\nMy Charter Cars");
+				+ "\n\n\nRegards,\nMy Charter Car");
 		javaMailSender.send(msg);
 	}
 }
